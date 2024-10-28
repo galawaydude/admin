@@ -25,7 +25,6 @@ const Coupons = () => {
         const fetchCoupons = async () => {
             try {
                 const response = await fetch('https://demotestmern.azurewebsites.net/api/coupons/', {
-                    credentials: 'include',
                 });
                 if (!response.ok) {
                     throw new Error('Failed to fetch coupons');

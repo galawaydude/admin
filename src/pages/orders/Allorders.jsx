@@ -11,7 +11,6 @@ function AllOrders() {
     const fetchOrders = async () => {
       try {
         const response = await fetch('https://demotestmern.azurewebsites.net/api/orders', {
-          credentials: 'include',
         });
         if (!response.ok) {
           throw new Error('Network response was not ok');
